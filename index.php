@@ -16,9 +16,6 @@
     <?php include "layout/header.php"; ?>
     <main>
         <p class="fullscreen-text" data-aos="fade-up">Welcome</p>
-        <!-- <div class="card" data-aos="fade-up">
-            <div><h1>Welcome</h1></div>
-        </div> -->
     </main>
     <?php include "layout/footer.html"; ?>
     <script>
