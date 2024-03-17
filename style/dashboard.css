@@ -7,7 +7,6 @@ body.page {
     display: grid;
     grid-template-areas: 
         "sidebar content";
-        /* "sidebar footer"; */
     height: 100vh; /* Menjadikan tinggi body menjadi 100% dari viewport height */
 }
 
