@@ -1,0 +1,74 @@
+ * {
+    margin: 0;
+    padding: 0;
+ }
+
+body.page {
+    display: grid;
+    grid-template-areas: 
+        "sidebar content";
+        /* "sidebar footer"; */
+    height: 100vh; /* Menjadikan tinggi body menjadi 100% dari viewport height */
+}
+
+.fullscreen-element {
+    width: 100%; /* Mengisi lebar elemen */
+    height: 100%; /* Mengisi tinggi elemen */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#sidebar {
+    grid-area: sidebar;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+    height: 100%;
+    overflow: auto;
+}
+
+#sidebar a{
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+#sidebar a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#sidebar a:hover{
+    background-color: #555;
+    color: white;
+}
+
+#content {
+    grid-area: content;
+    padding: 20px; /* Padding untuk konten */
+}
+
+#foot {
+    grid-area: footer;
+}
+
+.fullscreen-text {
+    height: 90vh; /* Mengatur tinggi elemen teks menjadi 100% tinggi viewport */
+    font-size: 10vw;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+i {
+  display: grid;
+  margin: auto;
+  justify-content: center;
+}
